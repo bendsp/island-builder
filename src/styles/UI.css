@@ -1,0 +1,116 @@
+.ui-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.ui-panel {
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  color: white;
+  pointer-events: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.ui-panel h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #4fc3f7;
+}
+
+.control-group {
+  margin-bottom: 20px;
+}
+
+.control-group h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.slider {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #555;
+  outline: none;
+  border-radius: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4fc3f7;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4fc3f7;
+  cursor: pointer;
+  border: none;
+}
+
+.tool-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-button {
+  padding: 8px 12px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tool-button:hover {
+  background-color: #444;
+}
+
+.tool-button.active {
+  background-color: #4fc3f7;
+  color: #111;
+  border-color: #4fc3f7;
+}
+
+.instructions {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.instructions p {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.slider-description {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+  font-style: italic;
+}
